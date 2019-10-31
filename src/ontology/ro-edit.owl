@@ -503,6 +503,27 @@ Declaration(ObjectProperty(obo:RO_0009005))
 Declaration(ObjectProperty(obo:RO_0009501))
 Declaration(ObjectProperty(obo:RO_0010001))
 Declaration(ObjectProperty(obo:RO_0010002))
+Declaration(ObjectProperty(obo:RO_0011001))
+Declaration(ObjectProperty(obo:RO_0011002))
+Declaration(ObjectProperty(obo:RO_0011003))
+Declaration(ObjectProperty(obo:RO_0011004))
+Declaration(ObjectProperty(obo:RO_0011006))
+Declaration(ObjectProperty(obo:RO_0011007))
+Declaration(ObjectProperty(obo:RO_0011008))
+Declaration(ObjectProperty(obo:RO_0011009))
+Declaration(ObjectProperty(obo:RO_0011010))
+Declaration(ObjectProperty(obo:RO_0011011))
+Declaration(ObjectProperty(obo:RO_0011012))
+Declaration(ObjectProperty(obo:RO_0011013))
+Declaration(ObjectProperty(obo:RO_0011014))
+Declaration(ObjectProperty(obo:RO_0011015))
+Declaration(ObjectProperty(obo:RO_0011016))
+Declaration(ObjectProperty(obo:RO_0011017))
+Declaration(ObjectProperty(obo:RO_0011018))
+Declaration(ObjectProperty(obo:RO_0011019))
+Declaration(ObjectProperty(obo:RO_0011020))
+Declaration(ObjectProperty(obo:RO_0011021))
+Declaration(ObjectProperty(obo:RO_0011022))
 Declaration(ObjectProperty(obo:RO_0040035))
 Declaration(ObjectProperty(obo:RO_0040036))
 Declaration(ObjectProperty(owl:topObjectProperty))
@@ -3739,31 +3760,31 @@ AnnotationAssertion(obo:IAO_0000118 obo:RO_0002447 "An interaction relation betw
 AnnotationAssertion(rdfs:label obo:RO_0002447 "phosphorylates")
 SubObjectPropertyOf(obo:RO_0002447 obo:RO_0002436)
 
-# Object Property: obo:RO_0002448 (activity directly regulates activity of)
+# Object Property: obo:RO_0002448 (directly regulates activity of)
 
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002448 "Holds between molecular entities A and B where A can physically interact with B and in doing so regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.")
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0002448 "Holds between molecular entities A and B where A can physically interact with B and in doing so regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A regulates the kinase activity of B")
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002448 "Chris Mungall")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0002448 "molecularly controls")
-AnnotationAssertion(rdfs:label obo:RO_0002448 "activity directly regulates activity of")
+AnnotationAssertion(rdfs:label obo:RO_0002448 "directly regulates activity of")
 SubObjectPropertyOf(obo:RO_0002448 obo:RO_0002436)
-SubObjectPropertyOf(obo:RO_0002448 obo:RO_0002566)
+SubObjectPropertyOf(obo:RO_0002448 obo:RO_0011001)
 
-# Object Property: obo:RO_0002449 (activity directly negatively regulates activity of)
+# Object Property: obo:RO_0002449 (directly negatively regulates activity of)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0002449 "Holds between molecular entities A and B where A can physically interact with B and in doing so negatively regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B.")
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002449 "Chris Mungall")
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0002449 "inhibits")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0002449 "molecularly decreases activity of")
-AnnotationAssertion(rdfs:label obo:RO_0002449 "activity directly negatively regulates activity of")
+AnnotationAssertion(rdfs:label obo:RO_0002449 "directly negatively regulates activity of")
 SubObjectPropertyOf(obo:RO_0002449 obo:RO_0002448)
 
-# Object Property: obo:RO_0002450 (activity directly positively regulates activity of)
+# Object Property: obo:RO_0002450 (directly positively regulates activity of)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0002450 "Holds between molecular entities A and B where A can physically interact with B and in doing so positively regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B.")
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002450 "Chris Mungall")
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0002450 "activates")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0002450 "molecularly increases activity of")
-AnnotationAssertion(rdfs:label obo:RO_0002450 "activity directly positively regulates activity of")
+AnnotationAssertion(rdfs:label obo:RO_0002450 "directly positively regulates activity of")
 SubObjectPropertyOf(obo:RO_0002450 obo:RO_0002448)
 
 # Object Property: obo:RO_0002451 (transmitted by)
@@ -4574,7 +4595,7 @@ SubObjectPropertyOf(obo:RO_0002565 obo:RO_0040036)
 
 # Object Property: obo:RO_0002566 (causally influences)
 
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002566 "Holds between materal entities a and b if the activity of a is causally upstream of the activity of b, or causally upstream of a an activity that modifies b")
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0002566 "Holds between materal entities A and B if A is causally upstream of B, and A modifies B")
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002566 "Chris Mungall")
 AnnotationAssertion(obo:IAO_0000119 obo:RO_0002566 <http://purl.obolibrary.org/obo/ro/docs/causal-relations>)
 AnnotationAssertion(obo:IAO_0000589 obo:RO_0002566 "causally influences (material entity to material entity)")
@@ -5023,15 +5044,16 @@ ObjectPropertyRange(obo:RO_0003001 obo:BFO_0000040)
 
 # Object Property: obo:RO_0003002 (represses expression of)
 
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0003002 "Holds between protein a (a transcription factor) and DNA element b if and only if a diminishes the process of transcription of b.")
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0003002 "Holds between protein A (for example, a transcription factor) and nucleic acid B if and only if A diminishes the expression of B")
 AnnotationAssertion(obo:IAO_0000116 obo:RO_0003002 "Logical axioms to be added after the relevant branch of GO is MIREOTed in")
 AnnotationAssertion(rdfs:label obo:RO_0003002 "represses expression of")
 SubObjectPropertyOf(obo:RO_0003002 obo:RO_0002449)
 
 # Object Property: obo:RO_0003003 (increases expression of)
 
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0003003 "Holds between protein a (a transcription factor) and DNA element b if and only if a activates the process of transcription of b.")
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0003003 "Holds between material entity A and nucleic acid B if and only if A activates the expression of B")
 AnnotationAssertion(obo:IAO_0000116 obo:RO_0003003 "Logical axioms to be added after the relevant branch of GO is MIREOTed in")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0003003 "up-regulates expression of")
 AnnotationAssertion(rdfs:label obo:RO_0003003 "increases expression of")
 SubObjectPropertyOf(obo:RO_0003003 obo:RO_0002450)
 
@@ -5627,6 +5649,157 @@ AnnotationAssertion(obo:IAO_0000119 obo:RO_0010002 "[072-ISO]")
 AnnotationAssertion(rdfs:label obo:RO_0010002 "is carrier of"@en)
 ObjectPropertyDomain(obo:RO_0010002 obo:BFO_0000004)
 ObjectPropertyRange(obo:RO_0010002 obo:BFO_0000031)
+
+# Object Property: obo:RO_0011001 (regulates activity)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011001 "Holds between molecular entities A and B where A regulates a process that B is capable of. For example, A and B may be gene products and A regulates the kinase activity of B.")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011001 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011001 "regulates activity"@en)
+SubObjectPropertyOf(obo:RO_0011001 obo:RO_0002566)
+
+# Object Property: obo:RO_0011002 (regulates quantity)
+
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011002 "Vasundra Touré")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0011002 "Holds between molecular entities A and B where A regulates the abundance or concentration of B")
+AnnotationAssertion(rdfs:label obo:RO_0011002 "regulates quantity"@en)
+SubObjectPropertyOf(obo:RO_0011002 obo:RO_0002566)
+
+# Object Property: obo:RO_0011003 (represses translation of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011003 "Holds between a material entity A and a mRNA element B where A represses the translation of B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011003 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011003 "represses translation of"@en)
+SubObjectPropertyOf(obo:RO_0011003 obo:RO_0003002)
+
+# Object Property: obo:RO_0011004 (represses transcription of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011004 "Holds between molecular entity A (a transcription factor) and  DNA element B where A represses the transcription of B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011004 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011004 "represses transcription of"@en)
+SubObjectPropertyOf(obo:RO_0011004 obo:RO_0003002)
+
+# Object Property: obo:RO_0011006 (increases transcription of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011006 "Holds between molecular entity A and DNA element B where A increases the transcription of B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011006 "Vasundra Touré")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0011006 "up-regulates transcription of")
+AnnotationAssertion(rdfs:label obo:RO_0011006 "increases transcription of"@en)
+SubObjectPropertyOf(obo:RO_0011006 obo:RO_0003003)
+
+# Object Property: obo:RO_0011007 (increases translation of)
+
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011007 "Holds between material entity A and mRNA element B where A increases the translation of B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011007 "Vasundra Touré")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0011007 "up-regulates translation of")
+AnnotationAssertion(rdfs:label obo:RO_0011007 "increases translation of"@en)
+SubObjectPropertyOf(obo:RO_0011007 obo:RO_0003003)
+
+# Object Property: obo:RO_0011008 (directly regulates quantity of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011008 "Holds between molecular entities A and B where A can physically interact with B and A modifies the abundance or concentration of B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011008 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011008 "directly regulates quantity of"@en)
+SubObjectPropertyOf(obo:RO_0011008 obo:RO_0011002)
+
+# Object Property: obo:RO_0011009 (directly positively regulates quantity of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011009 "Holds between material entities A and B where A increases the abundance or concentration of B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011009 "Vasundra Touré")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0011009 "directly up-regulates quantity of")
+AnnotationAssertion(rdfs:label obo:RO_0011009 "directly positively regulates quantity of"@en)
+SubObjectPropertyOf(obo:RO_0011009 obo:RO_0011008)
+
+# Object Property: obo:RO_0011010 (directly negatively regulates quantity of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011010 "Holds between material entities A and B where A decreases the abundance or concentration of B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011010 "Vasundra Touré")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0011010 "directly down-regulates quantity of")
+AnnotationAssertion(rdfs:label obo:RO_0011010 "directly negatively regulates quantity of"@en)
+SubObjectPropertyOf(obo:RO_0011010 obo:RO_0011008)
+
+# Object Property: obo:RO_0011011 (indirectly regulates quantity of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011011 "Holds between molecular entities A and B where A does not physically interact with B and A can modify the abundance or concentration of B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011011 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011011 "indirectly regulates quantity of"@en)
+SubObjectPropertyOf(obo:RO_0011011 obo:RO_0011002)
+
+# Object Property: obo:RO_0011012 (indirectly positively regulates quantity of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011012 "Holds between molecular entities A and B where A does not physically interact with B and A can positively regulate the abundance or concentration of B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011012 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011012 "indirectly positively regulates quantity of"@en)
+SubObjectPropertyOf(obo:RO_0011012 obo:RO_0011011)
+
+# Object Property: obo:RO_0011013 (indirectly negatively regulates quantity of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011013 "Holds between molecular entities A and B where A does not physically interact with B and A can negatively regulate the abundance or concentration of B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011013 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011013 "indirectly negatively regulates quantity of"@en)
+SubObjectPropertyOf(obo:RO_0011013 obo:RO_0011011)
+
+# Object Property: obo:RO_0011014 (decreases quantity by repression)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011014 "Holds between molecular entities A and B where A does not physically interact with B and A can decrease the abundance or concentration of B. For instance, a transcription factor A down-regulates the quantity of a gene product B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011014 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011014 "decreases quantity by repression"@en)
+SubObjectPropertyOf(obo:RO_0011014 obo:RO_0011013)
+
+# Object Property: obo:RO_0011015 (increases quantity by expression)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011015 "Holds between molecular entities A and B where A does not physically interact with B and A can increase the abundance or concentration of B. For instance, a transcription factor A can up-regulate the quantity of a gene product B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011015 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011015 "increases quantity by expression"@en)
+SubObjectPropertyOf(obo:RO_0011015 obo:RO_0011012)
+
+# Object Property: obo:RO_0011016 (decreases quantity by transcription)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011016 "Holds between two gene products A and B where A represses the transcription of a gene which leads to the down-regulation of the abundance or concentration of the gene product B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011016 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011016 "decreases quantity by transcription"@en)
+SubObjectPropertyOf(obo:RO_0011016 obo:RO_0011014)
+
+# Object Property: obo:RO_0011017 (decreases quantity by translation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011017 "Holds between two gene products A and B where A represses the translation of an mRNA into protein B, which leads to the down-regulation of the abundance or concentration of protein B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011017 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011017 "decreases quantity by translation"@en)
+SubObjectPropertyOf(obo:RO_0011017 obo:RO_0011014)
+
+# Object Property: obo:RO_0011018 (increases quantity by transcription)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011018 "Holds between two gene products A and B where A increases the transcription of a gene which can possibly increase the abundance or concentration of the gene product B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011018 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011018 "increases quantity by transcription"@en)
+SubObjectPropertyOf(obo:RO_0011018 obo:RO_0011015)
+
+# Object Property: obo:RO_0011019 (increases quantity by translation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011019 "Holds between two gene products A and B where A increases the translation of an mRNA into protein B, which can possibly up-regulate of the abundance or concentration of protein B")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011019 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011019 "increases quantity by translation"@en)
+SubObjectPropertyOf(obo:RO_0011019 obo:RO_0011015)
+
+# Object Property: obo:RO_0011020 (indirectly regulates activity of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011020 "Holds between molecular entities A and B where A does not physically interact with B but still has an effect on a process that B is capable of")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011020 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011020 "indirectly regulates activity of"@en)
+SubObjectPropertyOf(obo:RO_0011020 obo:RO_0011001)
+
+# Object Property: obo:RO_0011021 (indirectly negatively regulates activity of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011021 "Holds between molecular entities A and B where A does not physically interact with B but negatively regulates a process that B is capable of")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011021 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011021 "indirectly negatively regulates activity of"@en)
+SubObjectPropertyOf(obo:RO_0011021 obo:RO_0011020)
+
+# Object Property: obo:RO_0011022 (indirectly positively regulates activity of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0011022 "Holds between molecular entities A and B where A does not physically interact with B but positively regulates a process that B is capable of")
+AnnotationAssertion(obo:IAO_0000117 obo:RO_0011022 "Vasundra Touré")
+AnnotationAssertion(rdfs:label obo:RO_0011022 "indirectly positively regulates activity of"@en)
+SubObjectPropertyOf(obo:RO_0011022 obo:RO_0011020)
 
 # Object Property: obo:RO_0040035 (disease relationship)
 
